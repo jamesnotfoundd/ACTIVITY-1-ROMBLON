@@ -1,13 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>BUTTON ALERT EXAMPLE</title>
-    <body>
-     <button onclick="showAlert()">Click Me</button>
-     <script>
-        function showAlert(){
-            alert("Button Clicked!")
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            font-family: Arial, sans-serif;
         }
-        </script>
-    </body>
+
+        button {
+            padding: 15px 35px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 30px;
+            background: white;
+            color: #764ba2;
+            cursor: pointer;
+            transition: 0.3s ease;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        button:hover {
+            background: #764ba2;
+            color: white;
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+
+<body>
+
+    <button onclick="showAlert()">Click Me</button>
+
+    <script>
+        function showAlert(){
+            alert("Button Clicked!");
+        }
+    </script>
+
+</body>
 </html>
